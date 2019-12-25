@@ -53,8 +53,8 @@ Rails.application.routes.draw do
 
     get 'signin' => 'users/sessions#new'
     get 'signup' => 'users/registrations#new'
-    get 'forgot_password', to: 'users/passwords#new'
-    get 'reset_password', to: 'users/passwords#edit'
+    get 'forgot_password' => 'users/passwords#new'
+    get 'reset_password' => 'users/passwords#edit'
   end
 end
 ```
